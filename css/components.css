@@ -1,0 +1,72 @@
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:rgba(255,255,255,0.8);
+}
+
+.nav-menu{display:flex;gap:20px}
+
+.nav-item{
+  padding:6px 12px;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.nav-item.active{
+  background:#2563eb;
+  color:white;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.card{
+  padding:15px;
+  border-radius:15px;
+  color:white;
+}
+
+.blue{background:#3b82f6}
+.orange{background:#f59e0b}
+.green{background:#10b981}
+.purple{background:#8b5cf6}
+
+form{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin-bottom:20px;
+}
+
+input,select{
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:10px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th,td{
+  padding:10px;
+  text-align:center;
+}
+
+th{
+  background:#2563eb;
+  color:white;
+}
