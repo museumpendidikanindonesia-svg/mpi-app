@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+<div id="nav"></div>
+
+<div class="container">
+
+<div class="cards">
+  <div class="card blue">Total <span id="totalPengunjung"></span></div>
+  <div class="card purple">Rp <span id="totalUang"></span></div>
+</div>
+
+<form id="form">
+<input type="date" id="tanggal">
+<input type="text" id="nama">
+<select id="kategori"><option>Umum</option><option>UNY</option></select>
+<select id="paket"><option>Umum</option><option>Grip</option></select>
+<input type="number" id="jumlah">
+<button>Tambah</button>
+</form>
+
+<table>
+<thead><tr><th>No</th><th>Tanggal</th><th>Nama</th><th>Total</th></tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+
+</div>
+
+<script type="module">
+import {navbar} from "./js/components/navbar.js";
+document.getElementById("nav").innerHTML = navbar("dashboard");
+</script>
+
+<script type="module" src="js/pages/dashboard.js"></script>
+
+</body>
+</html>
