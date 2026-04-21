@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Statistik</title>
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/components.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+<div id="nav"></div>
+
+<div class="container">
+  <canvas id="chart"></canvas>
+</div>
+
+<script type="module">
+import {navbar} from "./js/components/navbar.js";
+document.getElementById("nav").innerHTML = navbar("statistik");
+</script>
+
+<script type="module" src="js/pages/statistik.js"></script>
+
+</body>
+</html>
